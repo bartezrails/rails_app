@@ -1,0 +1,13 @@
+.row
+  %p.notice
+  =notice
+  %p
+    =fa_icon "user"
+    =@user.name
+  %p
+    =fa_icon "envelope-o"
+    =@user.email
+
+  = link_to 'Edit', edit_user_path(@user)
+  |
+  = link_to 'Back', users_path
