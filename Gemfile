@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
+#Wysiwyg
+gem "wysiwyg-rails"
 #Use HAML instead ERB
 gem 'haml'
 #Foundation

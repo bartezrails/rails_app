@@ -1,0 +1,16 @@
+.row
+  .large-12.columns
+    =fa_icon "clock-o",  text: @post.created_at.strftime('%d.%m.%Y, %H:%M')
+    =fa_icon "user",  text: @post.author
+    =fa_icon "eye",  text: '382'
+    =fa_icon "star",  text: @post.rating
+    
+  %h1 
+    =@post.title
+
+  %article
+    =@post.body.html_safe
+
+  =link_to 'Edit', edit_post_path(@post)
+  |
+  =link_to 'Back', posts_path
